@@ -1,4 +1,4 @@
-$(document).(function(){
+
 var arrResults = [];
   var html = "";
 
@@ -48,4 +48,3 @@ var arrResults = [];
   $("#search").keyup(function() {
     search();
   });
-});
