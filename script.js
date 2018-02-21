@@ -1,5 +1,4 @@
-
-var arrResults = [];
+  var arrResults = [];
   var html = "";
 
   //Create structure for the data
@@ -14,8 +13,7 @@ var arrResults = [];
     url: 'https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=' + $('#search').val(),
     dataType: "jsonp",
     type: "POST",
-    headers: {"Api-User-Agent": "Example/1.0"
-             },
+    headers: {"Api-User-Agent": "Example/1.0"},
     success: function(data) {
       //clear the children from our class to make sure no previous results are showing up.
       $(".results").empty();
